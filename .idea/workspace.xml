@@ -4,21 +4,27 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="eef49667-e3d2-42f9-b171-eff0d9e83832" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/intellij-javadocs-4.0.1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_05_02_2024_15_42_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_05_02_2024_15_42_[Changes]1/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_05_02_2024_15_42__Changes_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_05_02_2024_17_52_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_06_02_2024_14_45_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+    <list default="true" id="eef49667-e3d2-42f9-b171-eff0d9e83832" name="Changes" comment="deploy 1">
+      <change beforePath="$PROJECT_DIR$/.github/workflows/about-service-docker-push.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/about-service-docker-push.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/workflows/auth-service-docker-push.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/auth-service-docker-push.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/workflows/career-service-docker-push.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/career-service-docker-push.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/workflows/config-service-docker-push.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/config-service-docker-push.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/workflows/contact-service-docker-push.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/contact-service-docker-push.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/workflows/gateway-service-docker-push.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/gateway-service-docker-push.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/workflows/home-service-docker-push.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/home-service-docker-push.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/workflows/offers-service-docker-push.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/offers-service-docker-push.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/workflows/partner-service-docker-push.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/partner-service-docker-push.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config-repo" beforeDir="false" afterPath="$PROJECT_DIR$/config-repo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/config-service/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/about-service/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/about-service/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-service/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/career-service/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/career-service/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config-repo/docker/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/config-repo/docker/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config-service/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/config-service/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contact-service/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/contact-service/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway-service/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/gateway-service/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home-service/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/home-service/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/offers-service/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/offers-service/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/partner-service/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/partner-service/Dockerfile" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,6 +102,19 @@
       <option name="presentableId" value="Default" />
       <updated>1708954448522</updated>
     </task>
+    <task id="LOCAL-00001" summary="deploy 1">
+      <option name="closed" value="true" />
+      <created>1708955337038</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1708955337038</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="deploy 1" />
+    <option name="LAST_COMMIT_MESSAGE" value="deploy 1" />
   </component>
 </project>

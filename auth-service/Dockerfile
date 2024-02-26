@@ -1,24 +1,30 @@
-FROM eclipse-temurin:17-jdk-focal
+# Étape de construction
+FROM maven:3.8.4-openjdk-17 AS build
 
 WORKDIR /app
 
-# Copiez le fichier Maven Wrapper et les fichiers nécessaires
-COPY .mvn .mvn
-COPY mvnw .
-COPY mvnw.cmd .
+# Copier le fichier pom.xml pour télécharger les dépendances
 COPY pom.xml .
 
-# Rendez le script Maven Wrapper exécutable
-RUN chmod +x mvnw
+# Télécharger les dépendances (cela est séparé pour optimiser le cache des dépendances)
+RUN mvn dependency:go-offline
 
-# Exécutez les étapes Maven nécessaires
-#RUN ./mvnw dependency:go-offline
-#RUN ./mvnw clean package
-RUN ./mvnw clean package -DskipTests
+# Copier le reste du code source
+COPY src src
 
-# Exposez le port nécessaire
+# Construire l'application
+RUN mvn clean package -DskipTests
+
+# Étape finale avec l'image Alpine OpenJDK 17
+FROM adoptopenjdk:17-jre-hotspot-bionic as final
+
+WORKDIR /app
+
+# Copier le JAR construit à partir de l'étape de construction précédente
+COPY --from=build /app/target/*.jar /app/authService.jar
+
+# Exposer le port sur lequel l'application s'exécute
 EXPOSE 9000
 
-# Commande pour démarrer l'application
-# CMD ["./mvnw", "spring-boot:run"]
+# Définir la commande pour exécuter l'application
 CMD ["java", "-jar", "authService.jar"]
