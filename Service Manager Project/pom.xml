@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>3.2.2</version>
+        <relativePath/> <!-- lookup parent from repository -->
+    </parent>
+    <packaging>pom</packaging>
+    <groupId>net.service.manager</groupId>
+    <artifactId>service-manager-project</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <name>service-manager-project</name>
+    <description>Microservice du projet service manager</description>
+    <properties>
+        <java.version>17</java.version>
+        <spring-cloud.version>2023.0.0</spring-cloud.version>
+    </properties>
+
+    <modules>
+        <module>../auth-service</module>
+        <module>../about-service</module>
+        <module>../career-service</module>
+        <module>../config-service</module>
+        <module>../contact-service</module>
+        <module>../gateway-service</module>
+        <module>../home-service</module>
+        <module>../offers-service</module>
+        <module>../partner-service</module>
+    </modules>
+</project>

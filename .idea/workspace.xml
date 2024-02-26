@@ -1,0 +1,767 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="4eecf8e8-402f-48a5-94d1-445959f05c4e" name="Changes" comment="code of api is okay 15">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
+  </component>
+  <component name="JpbToolWindowState">
+    <option name="isToolWindowVisible" value="false" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
+  <component name="ProjectId" id="2b3Rx04mTaZSFQRGg6YynU8FHpm" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Application.Run about-service.executor": "Run",
+    "Application.Run auth-service.executor": "Run",
+    "Application.Run career-service.executor": "Run",
+    "Application.Run config-service.executor": "Run",
+    "Application.Run contact-service.executor": "Run",
+    "Application.Run gateway-service.executor": "Run",
+    "Application.Run home-service.executor": "Run",
+    "Application.Run offerts-service.executor": "Run",
+    "Application.Run partner-service.executor": "Run",
+    "Docker.Run service-manager-project.executor": "Run",
+    "Docker.auth-service/Dockerfile.executor": "Run",
+    "Docker.config-service/Dockerfile.executor": "Run",
+    "Docker.docker-compose.yml.config-service: Compose Deployment.executor": "Run",
+    "Docker.docker-compose.yml.consul: Compose Deployment.executor": "Run",
+    "Docker.docker-compose.yml.elasticsearch: Compose Deployment.executor": "Run",
+    "Docker.docker-compose.yml.mysql: Compose Deployment.executor": "Run",
+    "Docker.docker-compose.yml.postgres: Compose Deployment.executor": "Run",
+    "Docker.docker-compose.yml.rabbitmq: Compose Deployment.executor": "Run",
+    "Docker.docker-compose.yml.vault: Compose Deployment.executor": "Run",
+    "Docker.gateway-service/Dockerfile.executor": "Run",
+    "Maven.about-service [clean].executor": "Run",
+    "Maven.service-manager-project [clean].executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "dart.analysis.tool.window.visible": "false",
+    "git-widget-placeholder": "main",
+    "ignore_missing_gitignore": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/home/dexter/Documents/Dexter project/Dexter project/backend/.github/workflows",
+    "settings.editor.selected.configurable": "configurable.group.build",
+    "show.migrate.to.gradle.popup": "false"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/.github/workflows" />
+      <recent name="$PROJECT_DIR$/contact-service/src/main/java/net/service/manager/contact/crud" />
+      <recent name="$PROJECT_DIR$/auth-service/src/main/java/net/service/manager/auth/generic" />
+      <recent name="$PROJECT_DIR$/partner-service/src/main/java/net/service/manager/partner/generic" />
+      <recent name="$PROJECT_DIR$/offers-service/src/main/java/net/service/manager/offers/generic" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/about-service/src/main/resources/data" />
+      <recent name="$PROJECT_DIR$/about-service/src/main/resources" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="net.service.manager.home.rest.enums" />
+      <recent name="net.service.manager.contact.crud.controllers" />
+      <recent name="net.service.manager.home.crud.dto.reponse" />
+      <recent name="net.service.manager.home.crud.controllers.impl" />
+      <recent name="net.service.manager.home.crud.controllers" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.Run partner-service">
+    <configuration default="true" type="AZURE_FUNCTION_SUPPORT" factoryName="Run Functions">
+      <option name="appName" />
+      <option name="appServicePlanName" />
+      <option name="appServicePlanResourceGroup" />
+      <option name="appSettingsKey" value="f1dae49b-4189-4387-b72f-49eb65685116" />
+      <option name="artifact" />
+      <option name="debugOptions" />
+      <option name="deployment" />
+      <option name="deploymentStagingDirectoryPath" />
+      <option name="funcPath" />
+      <option name="functionHostArguments" />
+      <option name="hostJsonPath" />
+      <option name="insightsName" />
+      <option name="instrumentationKey" />
+      <option name="javaVersion" />
+      <option name="localSettingsJsonPath" />
+      <option name="moduleName" />
+      <option name="os" />
+      <option name="pricingTier" />
+      <option name="providerMap">
+        <map />
+      </option>
+      <option name="region" />
+      <option name="resourceGroup" />
+      <option name="stagingFolder" />
+      <option name="subscription" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Run about-service" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="net.service.manager.about.AboutServiceApplication" />
+      <module name="about-service" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Run auth-service" type="Application" factoryName="Application">
+      <option name="ALTERNATIVE_JRE_PATH" value="17" />
+      <option name="MAIN_CLASS_NAME" value="net.service.manager.auth.AuthServiceApplication" />
+      <module name="auth-service" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Run career-service" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="net.service.manager.career.CareerServiceApplication" />
+      <module name="career-service" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Run config-service" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="net.service.manager.configuration.ConfigServiceApplication" />
+      <module name="config-service" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Run contact-service" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="net.service.manager.contact.ContactServiceApplication" />
+      <module name="contact-service" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Run gateway-service" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="net.service.manager.gateway.GatewayServiceApplication" />
+      <module name="gateway-service" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Run home-service" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="net.service.manager.home.HomeServiceApplication" />
+      <module name="home-service" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Run offerts-service" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="net.service.manager.offers.OffersServiceApplication" />
+      <module name="offers-service" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Run partner-service" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="net.service.manager.partner.PartnerServiceApplication" />
+      <module name="partner-service" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Run service-manager-project" type="docker-deploy" factoryName="docker-compose.yml" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="envFilePath" value="" />
+          <option name="sourceFilePath" value="config-repo/docker/docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="docker-deploy" factoryName="docker-compose.yml" temporary="true">
+      <deployment type="docker-compose.yml">
+        <settings />
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="docker-deploy" factoryName="dockerfile" temporary="true">
+      <deployment type="dockerfile">
+        <settings />
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="docker-compose.yml.config-service: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="services">
+            <list>
+              <option value="config-service" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="docker-compose.yml.elasticsearch: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="services">
+            <list>
+              <option value="elasticsearch" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="docker-compose.yml.mysql: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="services">
+            <list>
+              <option value="mysql" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="docker-compose.yml.postgres: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="services">
+            <list>
+              <option value="postgres" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="docker-compose.yml.vault: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="services">
+            <list>
+              <option value="vault" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Application.Run about-service" />
+      <item itemvalue="Application.Run auth-service" />
+      <item itemvalue="Application.Run career-service" />
+      <item itemvalue="Application.Run config-service" />
+      <item itemvalue="Application.Run contact-service" />
+      <item itemvalue="Application.Run gateway-service" />
+      <item itemvalue="Application.Run home-service" />
+      <item itemvalue="Application.Run offerts-service" />
+      <item itemvalue="Application.Run partner-service" />
+      <item itemvalue="Docker.Run service-manager-project" />
+      <item itemvalue="Docker.docker-compose.yml.config-service: Compose Deployment" />
+      <item itemvalue="Docker.docker-compose.yml.elasticsearch: Compose Deployment" />
+      <item itemvalue="Docker.docker-compose.yml.mysql: Compose Deployment" />
+      <item itemvalue="Docker.docker-compose.yml.postgres: Compose Deployment" />
+      <item itemvalue="Docker.docker-compose.yml.vault: Compose Deployment" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Docker.docker-compose.yml.config-service: Compose Deployment" />
+        <item itemvalue="Docker.docker-compose.yml.vault: Compose Deployment" />
+        <item itemvalue="Docker.docker-compose.yml.mysql: Compose Deployment" />
+        <item itemvalue="Docker.docker-compose.yml.postgres: Compose Deployment" />
+        <item itemvalue="Docker.docker-compose.yml.elasticsearch: Compose Deployment" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-17.0.9-corretto-17.0.9-4caba194b151-3c5dfc45" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4eecf8e8-402f-48a5-94d1-445959f05c4e" name="Changes" comment="" />
+      <created>1705442019389</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1705442019389</updated>
+    </task>
+    <task id="LOCAL-00048" summary="update full params 55">
+      <option name="closed" value="true" />
+      <created>1707491606464</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1707491606464</updated>
+    </task>
+    <task id="LOCAL-00049" summary="update full params 56">
+      <option name="closed" value="true" />
+      <created>1707492605653</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1707492605653</updated>
+    </task>
+    <task id="LOCAL-00050" summary="update full params 57">
+      <option name="closed" value="true" />
+      <created>1707493087455</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1707493087456</updated>
+    </task>
+    <task id="LOCAL-00051" summary="update full params 58">
+      <option name="closed" value="true" />
+      <created>1707493493623</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1707493493623</updated>
+    </task>
+    <task id="LOCAL-00052" summary="update full params 59">
+      <option name="closed" value="true" />
+      <created>1707493820567</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1707493820567</updated>
+    </task>
+    <task id="LOCAL-00053" summary="update full params 77">
+      <option name="closed" value="true" />
+      <created>1707743398925</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1707743398926</updated>
+    </task>
+    <task id="LOCAL-00054" summary="update full params 78">
+      <option name="closed" value="true" />
+      <created>1707743786042</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1707743786042</updated>
+    </task>
+    <task id="LOCAL-00055" summary="update full params 79">
+      <option name="closed" value="true" />
+      <created>1707745509781</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1707745509781</updated>
+    </task>
+    <task id="LOCAL-00056" summary="update full params 80">
+      <option name="closed" value="true" />
+      <created>1707751742035</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1707751742035</updated>
+    </task>
+    <task id="LOCAL-00057" summary="update full params 81">
+      <option name="closed" value="true" />
+      <created>1707752189256</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1707752189256</updated>
+    </task>
+    <task id="LOCAL-00058" summary="update full params 82">
+      <option name="closed" value="true" />
+      <created>1707755948493</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1707755948493</updated>
+    </task>
+    <task id="LOCAL-00059" summary="update full params 83">
+      <option name="closed" value="true" />
+      <created>1707825003094</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1707825003095</updated>
+    </task>
+    <task id="LOCAL-00060" summary="update full params 84">
+      <option name="closed" value="true" />
+      <created>1707831675762</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1707831675762</updated>
+    </task>
+    <task id="LOCAL-00061" summary="update full params 85">
+      <option name="closed" value="true" />
+      <created>1707832842046</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1707832842047</updated>
+    </task>
+    <task id="LOCAL-00062" summary="update full params 86">
+      <option name="closed" value="true" />
+      <created>1707834100667</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1707834100667</updated>
+    </task>
+    <task id="LOCAL-00063" summary="update full params 87">
+      <option name="closed" value="true" />
+      <created>1707834311003</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1707834311003</updated>
+    </task>
+    <task id="LOCAL-00064" summary="update full params 90">
+      <option name="closed" value="true" />
+      <created>1707934058535</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1707934058537</updated>
+    </task>
+    <task id="LOCAL-00065" summary="dexter 1">
+      <option name="closed" value="true" />
+      <created>1708096312934</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1708096312935</updated>
+    </task>
+    <task id="LOCAL-00066" summary="dexter 2">
+      <option name="closed" value="true" />
+      <created>1708098014895</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1708098014895</updated>
+    </task>
+    <task id="LOCAL-00067" summary="dexter 3">
+      <option name="closed" value="true" />
+      <created>1708099323897</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1708099323897</updated>
+    </task>
+    <task id="LOCAL-00068" summary="dexter 4">
+      <option name="closed" value="true" />
+      <created>1708099802971</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1708099802971</updated>
+    </task>
+    <task id="LOCAL-00069" summary="dexter 5">
+      <option name="closed" value="true" />
+      <created>1708105065677</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1708105065678</updated>
+    </task>
+    <task id="LOCAL-00070" summary="dexter 6">
+      <option name="closed" value="true" />
+      <created>1708106430636</created>
+      <option name="number" value="00070" />
+      <option name="presentableId" value="LOCAL-00070" />
+      <option name="project" value="LOCAL" />
+      <updated>1708106430636</updated>
+    </task>
+    <task id="LOCAL-00071" summary="dexter 7">
+      <option name="closed" value="true" />
+      <created>1708108179339</created>
+      <option name="number" value="00071" />
+      <option name="presentableId" value="LOCAL-00071" />
+      <option name="project" value="LOCAL" />
+      <updated>1708108179339</updated>
+    </task>
+    <task id="LOCAL-00072" summary="dexter 8">
+      <option name="closed" value="true" />
+      <created>1708109559019</created>
+      <option name="number" value="00072" />
+      <option name="presentableId" value="LOCAL-00072" />
+      <option name="project" value="LOCAL" />
+      <updated>1708109559020</updated>
+    </task>
+    <task id="LOCAL-00073" summary="dexter 10">
+      <option name="closed" value="true" />
+      <created>1708160826298</created>
+      <option name="number" value="00073" />
+      <option name="presentableId" value="LOCAL-00073" />
+      <option name="project" value="LOCAL" />
+      <updated>1708160826301</updated>
+    </task>
+    <task id="LOCAL-00074" summary="dexter 12">
+      <option name="closed" value="true" />
+      <created>1708168325734</created>
+      <option name="number" value="00074" />
+      <option name="presentableId" value="LOCAL-00074" />
+      <option name="project" value="LOCAL" />
+      <updated>1708168325735</updated>
+    </task>
+    <task id="LOCAL-00075" summary="dexter 13">
+      <option name="closed" value="true" />
+      <created>1708169402702</created>
+      <option name="number" value="00075" />
+      <option name="presentableId" value="LOCAL-00075" />
+      <option name="project" value="LOCAL" />
+      <updated>1708169402703</updated>
+    </task>
+    <task id="LOCAL-00076" summary="dexter 13">
+      <option name="closed" value="true" />
+      <created>1708170019888</created>
+      <option name="number" value="00076" />
+      <option name="presentableId" value="LOCAL-00076" />
+      <option name="project" value="LOCAL" />
+      <updated>1708170019888</updated>
+    </task>
+    <task id="LOCAL-00077" summary="dexter 14">
+      <option name="closed" value="true" />
+      <created>1708170863499</created>
+      <option name="number" value="00077" />
+      <option name="presentableId" value="LOCAL-00077" />
+      <option name="project" value="LOCAL" />
+      <updated>1708170863499</updated>
+    </task>
+    <task id="LOCAL-00078" summary="dexter 15">
+      <option name="closed" value="true" />
+      <created>1708171807086</created>
+      <option name="number" value="00078" />
+      <option name="presentableId" value="LOCAL-00078" />
+      <option name="project" value="LOCAL" />
+      <updated>1708171807086</updated>
+    </task>
+    <task id="LOCAL-00079" summary="dexter 16">
+      <option name="closed" value="true" />
+      <created>1708172274745</created>
+      <option name="number" value="00079" />
+      <option name="presentableId" value="LOCAL-00079" />
+      <option name="project" value="LOCAL" />
+      <updated>1708172274745</updated>
+    </task>
+    <task id="LOCAL-00080" summary="dexter 17">
+      <option name="closed" value="true" />
+      <created>1708179592456</created>
+      <option name="number" value="00080" />
+      <option name="presentableId" value="LOCAL-00080" />
+      <option name="project" value="LOCAL" />
+      <updated>1708179592457</updated>
+    </task>
+    <task id="LOCAL-00081" summary="dexter 18">
+      <option name="closed" value="true" />
+      <created>1708185769023</created>
+      <option name="number" value="00081" />
+      <option name="presentableId" value="LOCAL-00081" />
+      <option name="project" value="LOCAL" />
+      <updated>1708185769024</updated>
+    </task>
+    <task id="LOCAL-00082" summary="code of api is okay">
+      <option name="closed" value="true" />
+      <created>1708186554144</created>
+      <option name="number" value="00082" />
+      <option name="presentableId" value="LOCAL-00082" />
+      <option name="project" value="LOCAL" />
+      <updated>1708186554144</updated>
+    </task>
+    <task id="LOCAL-00083" summary="code of api is okay 2">
+      <option name="closed" value="true" />
+      <created>1708187668816</created>
+      <option name="number" value="00083" />
+      <option name="presentableId" value="LOCAL-00083" />
+      <option name="project" value="LOCAL" />
+      <updated>1708187668816</updated>
+    </task>
+    <task id="LOCAL-00084" summary="code of api is okay 3">
+      <option name="closed" value="true" />
+      <created>1708269111798</created>
+      <option name="number" value="00084" />
+      <option name="presentableId" value="LOCAL-00084" />
+      <option name="project" value="LOCAL" />
+      <updated>1708269111799</updated>
+    </task>
+    <task id="LOCAL-00085" summary="code of api is okay 4">
+      <option name="closed" value="true" />
+      <created>1708269745092</created>
+      <option name="number" value="00085" />
+      <option name="presentableId" value="LOCAL-00085" />
+      <option name="project" value="LOCAL" />
+      <updated>1708269745092</updated>
+    </task>
+    <task id="LOCAL-00086" summary="code of api is okay 5">
+      <option name="closed" value="true" />
+      <created>1708278672478</created>
+      <option name="number" value="00086" />
+      <option name="presentableId" value="LOCAL-00086" />
+      <option name="project" value="LOCAL" />
+      <updated>1708278672480</updated>
+    </task>
+    <task id="LOCAL-00087" summary="code of api is okay 6">
+      <option name="closed" value="true" />
+      <created>1708279199695</created>
+      <option name="number" value="00087" />
+      <option name="presentableId" value="LOCAL-00087" />
+      <option name="project" value="LOCAL" />
+      <updated>1708279199696</updated>
+    </task>
+    <task id="LOCAL-00088" summary="code of api is okay 7">
+      <option name="closed" value="true" />
+      <created>1708327343639</created>
+      <option name="number" value="00088" />
+      <option name="presentableId" value="LOCAL-00088" />
+      <option name="project" value="LOCAL" />
+      <updated>1708327343640</updated>
+    </task>
+    <task id="LOCAL-00089" summary="code of api is okay 8">
+      <option name="closed" value="true" />
+      <created>1708330327721</created>
+      <option name="number" value="00089" />
+      <option name="presentableId" value="LOCAL-00089" />
+      <option name="project" value="LOCAL" />
+      <updated>1708330327721</updated>
+    </task>
+    <task id="LOCAL-00090" summary="code of api is okay 9">
+      <option name="closed" value="true" />
+      <created>1708355196537</created>
+      <option name="number" value="00090" />
+      <option name="presentableId" value="LOCAL-00090" />
+      <option name="project" value="LOCAL" />
+      <updated>1708355196537</updated>
+    </task>
+    <task id="LOCAL-00091" summary="code of api is okay 10">
+      <option name="closed" value="true" />
+      <created>1708366096652</created>
+      <option name="number" value="00091" />
+      <option name="presentableId" value="LOCAL-00091" />
+      <option name="project" value="LOCAL" />
+      <updated>1708366096652</updated>
+    </task>
+    <task id="LOCAL-00092" summary="code of api is okay 11">
+      <option name="closed" value="true" />
+      <created>1708525472284</created>
+      <option name="number" value="00092" />
+      <option name="presentableId" value="LOCAL-00092" />
+      <option name="project" value="LOCAL" />
+      <updated>1708525472286</updated>
+    </task>
+    <task id="LOCAL-00093" summary="code of api is okay 12">
+      <option name="closed" value="true" />
+      <created>1708618413080</created>
+      <option name="number" value="00093" />
+      <option name="presentableId" value="LOCAL-00093" />
+      <option name="project" value="LOCAL" />
+      <updated>1708618413080</updated>
+    </task>
+    <task id="LOCAL-00094" summary="code of api is okay 13">
+      <option name="closed" value="true" />
+      <created>1708621735306</created>
+      <option name="number" value="00094" />
+      <option name="presentableId" value="LOCAL-00094" />
+      <option name="project" value="LOCAL" />
+      <updated>1708621735307</updated>
+    </task>
+    <task id="LOCAL-00095" summary="code of api is okay 14">
+      <option name="closed" value="true" />
+      <created>1708943092817</created>
+      <option name="number" value="00095" />
+      <option name="presentableId" value="LOCAL-00095" />
+      <option name="project" value="LOCAL" />
+      <updated>1708943092819</updated>
+    </task>
+    <task id="LOCAL-00096" summary="code of api is okay 15">
+      <option name="closed" value="true" />
+      <created>1708945360051</created>
+      <option name="number" value="00096" />
+      <option name="presentableId" value="LOCAL-00096" />
+      <option name="project" value="LOCAL" />
+      <updated>1708945360061</updated>
+    </task>
+    <option name="localTasksCounter" value="97" />
+    <servers />
+  </component>
+  <component name="UpdateCopyrightCheckinHandler">
+    <option name="UPDATE_COPYRIGHT" value="true" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="dexter 9" />
+    <MESSAGE value="dexter 10" />
+    <MESSAGE value="dexter 11" />
+    <MESSAGE value="dexter 12" />
+    <MESSAGE value="dexter 13" />
+    <MESSAGE value="dexter 14" />
+    <MESSAGE value="dexter 15" />
+    <MESSAGE value="dexter 16" />
+    <MESSAGE value="dexter 17" />
+    <MESSAGE value="dexter 18" />
+    <MESSAGE value="code of api is okay" />
+    <MESSAGE value="code of api is okay 2" />
+    <MESSAGE value="code of api is okay 3" />
+    <MESSAGE value="code of api is okay 4" />
+    <MESSAGE value="code of api is okay 5" />
+    <MESSAGE value="code of api is okay 6" />
+    <MESSAGE value="code of api is okay 7" />
+    <MESSAGE value="code of api is okay 8" />
+    <MESSAGE value="code of api is okay 9" />
+    <MESSAGE value="code of api is okay 10" />
+    <MESSAGE value="code of api is okay 11" />
+    <MESSAGE value="code of api is okay 12" />
+    <MESSAGE value="code of api is okay 13" />
+    <MESSAGE value="code of api is okay 14" />
+    <MESSAGE value="code of api is okay 15" />
+    <option name="LAST_COMMIT_MESSAGE" value="code of api is okay 15" />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
+  </component>
+</project>

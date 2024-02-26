@@ -1,0 +1,253 @@
+version: '3.2.0'
+services:
+  consul:
+    image: consul:1.15.4
+    ports:
+      - "8500:8500"
+      - "8600:8600/tcp"
+      - "8600:8600/udp"
+    restart: always
+    command: [ "agent", "-server", "-bootstrap-expect=1", "-ui", "-bind=0.0.0.0", "-client=0.0.0.0" ]
+    networks:
+      - microservices-network
+
+  vault:
+    image: vault:1.13.3
+    ports:
+      - "8200:8200"
+    depends_on:
+      - consul
+    restart: always
+    environment:
+      VAULT_DEV_LISTEN_ADDRESS: "0.0.0.0:8200"
+      VAULT_DEV_ROOT_TOKEN_ID: d+QjDvYB9ys7+/BfOV1RdTHqg0LeSvurmpu6n4ZyWlw=
+      VAULT_TOKEN: hvs.JlliRG1MqI86QdEFOYafFGmP
+    cap_add:
+      - IPC_LOCK
+    command: [ "server", "-dev", "-dev-root-token-id=d+QjDvYB9ys7+/BfOV1RdTHqg0LeSvurmpu6n4ZyWlw=" ]
+    networks:
+      - microservices-network
+
+  elasticsearch:
+    image: elasticsearch:8.12.1
+    container_name: elasticsearch
+    restart: always
+    environment:
+      - discovery.type=single-node
+      - cluster.name=my-cluster
+      - bootstrap.memory_lock=true
+      - "ES_JAVA_OPTS=-Xms512m -Xmx512m"
+    ulimits:
+      memlock:
+        soft: -1
+        hard: -1
+    ports:
+      - "9200:9200"
+      - "9300:9300"
+    volumes:
+      - esdata:/usr/share/elasticsearch/data
+    networks:
+      - microservices-network
+
+  postgres:
+    image: postgres:latest
+    restart: always
+    environment:
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: 2+2Font4
+      SPRING_JPA_HIBERNATE_DDL_AUTO: update
+    ports:
+      - "5432:5432"
+      - "10000:10000"
+      - "10002:10002"
+      - "10005:10005"
+      - "10006:10006"
+    networks:
+      - microservices-network
+
+  mysql:
+    image: mysql:latest
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: 2+2Font4
+      MYSQL_USER: admin
+      MYSQL_PASSWORD: 2+2Font4
+      SPRING_JPA_HIBERNATE_DDL_AUTO: update
+    ports:
+      - "3306:3306"
+      - "10001:10001"
+      - "10003:10003"
+      - "10004:10004"
+    networks:
+      - microservices-network
+
+  config-service:
+    build:
+      context: ./config-service
+      dockerfile: ../config-service/Dockerfile
+    restart: always
+    environment:
+      SPRING_CLOUD_CONFIG_SERVER_GIT_URI: https://github.com/GodBless2511/config-repo.git
+    ports:
+      - "8888:8888"
+    depends_on:
+      - consul
+      - vault
+    networks:
+      - microservices-network
+
+  auth-service:
+    build:
+      context: ./auth-service
+      dockerfile: ../auth-service/Dockerfile
+    restart: always
+    environment:
+      SPRING_APPLICATION_NAME: auth-service
+      SPRING_CLOUD_CONFIG_URI: http://config-service:8888
+      SPRING_DATASOURCE_URL: jdbc:postgresql://postgres:10000/~/auth-service
+    ports:
+      - "9000:9000"
+    depends_on:
+      - config-service
+      - elasticsearch
+      - postgres
+    networks:
+      - microservices-network
+
+  about-service:
+    build:
+      context: ./about-service
+      dockerfile: ../about-service/Dockerfile
+    restart: always
+    environment:
+      SPRING_APPLICATION_NAME: about-service
+      SPRING_CLOUD_CONFIG_URI: http://config-service:8888
+      SPRING_DATASOURCE_URL: jdbc:mysql://mysql:10001/~/about-service?useUnicode=yes&characterEncoding=UTF-8&characterSetResults=UTF-8&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
+    ports:
+      - "9001:9001"
+    depends_on:
+      - config-service
+      - elasticsearch
+      - mysql
+    networks:
+      - microservices-network
+
+  career-service:
+    build:
+      context: ./career-service
+      dockerfile: ../career-service/Dockerfile
+    restart: always
+    environment:
+      SPRING_APPLICATION_NAME: career-service
+      SPRING_CLOUD_CONFIG_URI: http://config-service:8888
+      SPRING_DATASOURCE_URL: jdbc:postgresql://postgres:10002/~/career-service
+    ports:
+      - "9002:9002"
+    depends_on:
+      - config-service
+      - elasticsearch
+      - postgres
+    networks:
+      - microservices-network
+
+  contact-service:
+    build:
+      context: ./contact-service
+      dockerfile: ../contact-service/Dockerfile
+    restart: always
+    environment:
+      SPRING_APPLICATION_NAME: contact-service
+      SPRING_CLOUD_CONFIG_URI: http://config-service:8888
+      SPRING_DATASOURCE_URL: jdbc:mysql://mysql:10003/~/contact-service?useUnicode=yes&characterEncoding=UTF-8&characterSetResults=UTF-8&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
+    ports:
+      - "9003:9003"
+    depends_on:
+      - config-service
+      - elasticsearch
+      - mysql
+    networks:
+      - microservices-network
+
+  home-service:
+    build:
+      context: ./home-service
+      dockerfile: ../home-service/Dockerfile
+    restart: always
+    environment:
+      SPRING_APPLICATION_NAME: home-service
+      SPRING_CLOUD_CONFIG_URI: http://config-service:8888
+      SPRING_DATASOURCE_URL: jdbc:mysql://mysql:10004/~/home-service?useUnicode=yes&characterEncoding=UTF-8&characterSetResults=UTF-8&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
+    ports:
+      - "9004:9004"
+    depends_on:
+      - config-service
+      - elasticsearch
+      - mysql
+    networks:
+      - microservices-network
+
+  offers-service:
+    build:
+      context: ./offers-service
+      dockerfile: ../offers-service/Dockerfile
+    restart: always
+    environment:
+      SPRING_APPLICATION_NAME: offers-service
+      SPRING_CLOUD_CONFIG_URI: http://config-service:8888
+      SPRING_DATASOURCE_URL: jdbc:postgresql://postgres:10005/~/offers-service
+    ports:
+      - "9005:9005"
+    depends_on:
+      - config-service
+      - elasticsearch
+      - postgres
+    networks:
+      - microservices-network
+
+  partner-service:
+    build:
+      context: ./partner-service
+      dockerfile: ../partner-service/Dockerfile
+    restart: always
+    environment:
+      SPRING_APPLICATION_NAME: partner-service
+      SPRING_CLOUD_CONFIG_URI: http://config-service:8888
+      SPRING_DATASOURCE_URL: jdbc:postgresql://postgres:10006/~/partner-service
+    ports:
+      - "9006:9006"
+    depends_on:
+      - config-service
+      - elasticsearch
+      - postgres
+    networks:
+      - microservices-network
+
+  gateway-service:
+    build:
+      context: ./gateway-service
+      dockerfile: ../gateway-service/Dockerfile
+    restart: always
+    environment:
+      SPRING_APPLICATION_NAME: gateway-service
+      SPRING_CLOUD_CONFIG_URI: http://config-service:8888
+    ports:
+      - "9999:9999"
+    depends_on:
+      - config-service
+      - auth-service
+      - about-service
+      - career-service
+      - contact-service
+      - home-service
+      - offers-service
+      - partner-service
+    networks:
+      - microservices-network
+
+networks:
+  microservices-network:
+    driver: bridge
+
+volumes:
+  esdata:
+    driver: local

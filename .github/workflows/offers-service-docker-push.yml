@@ -1,0 +1,46 @@
+name: Docker push - Offers Microservice
+
+on:
+  push:
+    branches:
+      - '**'
+    paths:
+      - 'offer-service/**'
+
+defaults:
+  run:
+    working-directory: offer-service
+
+jobs:
+  testing:
+    runs-on: self-hosted
+    steps:
+      - name: Run test
+        run: echo TESTING IS RUNNING HERE
+  building:
+    needs: testing
+    runs-on: self-hosted
+    container: docker:stable
+    steps:
+      - uses: actions/checkout@v1
+      - name: Run Build
+        run: |
+          echo Start app building here !
+          docker -v
+          sed -i 's/spring.profiles.active=dev/spring.profiles.active=prod/' src/main/resources/application.properties
+          sed -i 's/server.ssl.enabled=false/server.ssl.enabled=false/' src/main/resources/application.properties
+          sed -i 's/localhost/localhost/' src/main/resources/application.properties
+          cat src/main/resources/application.properties
+          docker build -t offer-service-api .
+  deployment:
+    needs:
+      - '**'
+    runs-on: self-hosted
+    container: docker:stable
+    steps:
+      - name: Run deploy
+        run: |
+          echo Start app deployment here !
+          docker kill offer-service-api || echo "Nothing to kill"
+          docker run --name offer-service-api -p 9005:9005 --rm -dit --hostname localhost -e VIRTUAL_HOST=localhost -e VIRTUAL_PORT=9005 -e LETSENCRYPT_HOST=localhost offer-service-api
+          docker logs -f offer-service-api

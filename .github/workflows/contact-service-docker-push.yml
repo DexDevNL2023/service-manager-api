@@ -1,0 +1,46 @@
+name: Docker push - Contact Microservice
+
+on:
+  push:
+    branches:
+      - '**'
+    paths:
+      - 'contact-service/**'
+
+defaults:
+  run:
+    working-directory: contact-service
+
+jobs:
+  testing:
+    runs-on: self-hosted
+    steps:
+      - name: Run test
+        run: echo TESTING IS RUNNING HERE
+  building:
+    needs: testing
+    runs-on: self-hosted
+    container: docker:stable
+    steps:
+      - uses: actions/checkout@v1
+      - name: Run Build
+        run: |
+          echo Start app building here !
+          docker -v
+          sed -i 's/spring.profiles.active=dev/spring.profiles.active=prod/' src/main/resources/application.properties
+          sed -i 's/server.ssl.enabled=false/server.ssl.enabled=false/' src/main/resources/application.properties
+          sed -i 's/localhost/localhost/' src/main/resources/application.properties
+          cat src/main/resources/application.properties
+          docker build -t contact-service-api .
+  deployment:
+    needs:
+      - '**'
+    runs-on: self-hosted
+    container: docker:stable
+    steps:
+      - name: Run deploy
+        run: |
+          echo Start app deployment here !
+          docker kill contact-service-api || echo "Nothing to kill"
+          docker run --name contact-service-api -p 9003:9003 --rm -dit --hostname localhost -e VIRTUAL_HOST=localhost -e VIRTUAL_PORT=9003 -e LETSENCRYPT_HOST=localhost contact-service-api
+          docker logs -f contact-service-api

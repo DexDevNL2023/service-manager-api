@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/../../../Service Manager Project/about-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../../../Service Manager Project/career-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../../../Service Manager Project/config-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../../../Service Manager Project/contact-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../../../Service Manager Project/gateway-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../../../Service Manager Project/home-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../../../Service Manager Project/offers-service/src/main/java" charset="UTF-8" />
+  </component>
+</project>
