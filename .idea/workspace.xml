@@ -4,9 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="eef49667-e3d2-42f9-b171-eff0d9e83832" name="Changes" comment="deploy 2">
-      <change beforePath="$PROJECT_DIR$/config-repo" beforeDir="false" afterPath="$PROJECT_DIR$/config-repo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+    <list default="true" id="eef49667-e3d2-42f9-b171-eff0d9e83832" name="Changes" comment="deploy 3">
+      <change beforePath="$PROJECT_DIR$/.github/workflows/about-service-docker-push.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/about-service-docker-push.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/workflows/auth-service-docker-push.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/auth-service-docker-push.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/workflows/career-service-docker-push.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/career-service-docker-push.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/workflows/config-service-docker-push.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/config-service-docker-push.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/workflows/contact-service-docker-push.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/contact-service-docker-push.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/workflows/gateway-service-docker-push.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/gateway-service-docker-push.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/workflows/home-service-docker-push.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/home-service-docker-push.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/workflows/offers-service-docker-push.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/offers-service-docker-push.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/workflows/partner-service-docker-push.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/partner-service-docker-push.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,26 +25,26 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="ROOT_SYNC" value="SYNC" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": 3
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 3
+}</component>
   <component name="ProjectId" id="2cuHFmTqgypTqc8voLvaGkZBkXz" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "dart.analysis.tool.window.visible": "false",
-    "git-widget-placeholder": "main",
-    "ignore_missing_gitignore": "true",
-    "kotlin-language-version-configured": "true",
-    "show.migrate.to.gradle.popup": "false"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore_missing_gitignore&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;show.migrate.to.gradle.popup&quot;: &quot;false&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration default="true" type="AZURE_FUNCTION_SUPPORT" factoryName="Run Functions">
       <option name="appName" />
@@ -101,12 +109,21 @@
       <option name="project" value="LOCAL" />
       <updated>1708957110384</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="deploy 3">
+      <option name="closed" value="true" />
+      <created>1708957303702</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1708957303702</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="deploy 1" />
     <MESSAGE value="deploy 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="deploy 2" />
+    <MESSAGE value="deploy 3" />
+    <option name="LAST_COMMIT_MESSAGE" value="deploy 3" />
   </component>
 </project>

@@ -28,7 +28,7 @@ jobs:
           docker -v
           sed -i 's/spring.profiles.active=dev/spring.profiles.active=prod/' src/main/resources/application.properties
           sed -i 's/server.ssl.enabled=false/server.ssl.enabled=false/' src/main/resources/application.properties
-          sed -i 's/localhost/localhost/' src/main/resources/application.properties
+          sed -i 's/localhost/service-manager-api.osc-fr1.scalingo.io/' src/main/resources/application.properties
           cat src/main/resources/application.properties
           docker build -t partner-service-api .
   deployment:
@@ -40,5 +40,5 @@ jobs:
         run: |
           echo Start app deployment here !
           docker kill partner-service-api || echo "Nothing to kill"
-          docker run --name partner-service-api -p 9006:9006 --rm -dit --hostname localhost -e VIRTUAL_HOST=localhost -e VIRTUAL_PORT=9006 -e LETSENCRYPT_HOST=localhost partner-service-api
+          docker run --name partner-service-api -p 9006:9006 --rm -dit --hostname service-manager-api.osc-fr1.scalingo.io -e VIRTUAL_PORT=9006 -e LETSENCRYPT_HOST=service-manager-api.osc-fr1.scalingo.io partner-service-api
           docker logs -f partner-service-api
