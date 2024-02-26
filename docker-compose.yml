@@ -87,7 +87,7 @@ services:
       dockerfile: ../config-service/Dockerfile
     restart: always
     environment:
-      SPRING_CLOUD_CONFIG_SERVER_GIT_URI: https://github.com/GodBless2511/config-repo.git
+      SPRING_CLOUD_CONFIG_SERVER_GIT_URI: https://github.com/DexDevNL2023/service-manager-config.git
     ports:
       - "8888:8888"
     depends_on:
