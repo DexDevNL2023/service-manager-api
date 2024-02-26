@@ -4,27 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="eef49667-e3d2-42f9-b171-eff0d9e83832" name="Changes" comment="deploy 1">
-      <change beforePath="$PROJECT_DIR$/.github/workflows/about-service-docker-push.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/about-service-docker-push.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.github/workflows/auth-service-docker-push.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/auth-service-docker-push.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.github/workflows/career-service-docker-push.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/career-service-docker-push.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.github/workflows/config-service-docker-push.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/config-service-docker-push.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.github/workflows/contact-service-docker-push.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/contact-service-docker-push.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.github/workflows/gateway-service-docker-push.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/gateway-service-docker-push.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.github/workflows/home-service-docker-push.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/home-service-docker-push.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.github/workflows/offers-service-docker-push.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/offers-service-docker-push.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.github/workflows/partner-service-docker-push.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/partner-service-docker-push.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/about-service/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/about-service/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-service/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/career-service/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/career-service/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config-repo/docker/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/config-repo/docker/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config-service/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/config-service/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/contact-service/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/contact-service/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway-service/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/gateway-service/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home-service/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/home-service/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/offers-service/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/offers-service/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/partner-service/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/partner-service/Dockerfile" afterDir="false" />
+    <list default="true" id="eef49667-e3d2-42f9-b171-eff0d9e83832" name="Changes" comment="deploy 2">
+      <change beforePath="$PROJECT_DIR$/config-repo" beforeDir="false" afterPath="$PROJECT_DIR$/config-repo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,6 +32,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "dart.analysis.tool.window.visible": "false",
     "git-widget-placeholder": "main",
+    "ignore_missing_gitignore": "true",
     "kotlin-language-version-configured": "true",
     "show.migrate.to.gradle.popup": "false"
   }
@@ -110,11 +93,20 @@
       <option name="project" value="LOCAL" />
       <updated>1708955337038</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="deploy 2">
+      <option name="closed" value="true" />
+      <created>1708957110384</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1708957110384</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="deploy 1" />
-    <option name="LAST_COMMIT_MESSAGE" value="deploy 1" />
+    <MESSAGE value="deploy 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="deploy 2" />
   </component>
 </project>
