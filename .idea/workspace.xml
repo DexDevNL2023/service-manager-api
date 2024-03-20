@@ -4,16 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="eef49667-e3d2-42f9-b171-eff0d9e83832" name="Changes" comment="deploy 3">
-      <change beforePath="$PROJECT_DIR$/.github/workflows/about-service-docker-push.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/about-service-docker-push.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.github/workflows/auth-service-docker-push.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/auth-service-docker-push.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.github/workflows/career-service-docker-push.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/career-service-docker-push.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.github/workflows/config-service-docker-push.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/config-service-docker-push.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.github/workflows/contact-service-docker-push.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/contact-service-docker-push.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.github/workflows/gateway-service-docker-push.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/gateway-service-docker-push.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.github/workflows/home-service-docker-push.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/home-service-docker-push.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.github/workflows/offers-service-docker-push.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/offers-service-docker-push.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.github/workflows/partner-service-docker-push.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/partner-service-docker-push.yml" afterDir="false" />
+    <list default="true" id="eef49667-e3d2-42f9-b171-eff0d9e83832" name="Changes" comment="deploy 4">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -117,13 +108,22 @@
       <option name="project" value="LOCAL" />
       <updated>1708957303702</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="deploy 4">
+      <option name="closed" value="true" />
+      <created>1708960839243</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1708960839243</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="deploy 1" />
     <MESSAGE value="deploy 2" />
     <MESSAGE value="deploy 3" />
-    <option name="LAST_COMMIT_MESSAGE" value="deploy 3" />
+    <MESSAGE value="deploy 4" />
+    <option name="LAST_COMMIT_MESSAGE" value="deploy 4" />
   </component>
 </project>
